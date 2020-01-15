@@ -5,4 +5,6 @@ This repository contains work completed during Spring 2020 in Dr. Murray's DIG46
 The *ice* folder contains in-class exercises. 
 
 ## About Me
-This should be replaced.
+https://www.linkedin.com/in/kyle-melendez-8368a2123/
+
+My preffered job is something involving front end. Mostly HTML , CSS and Javascript.
