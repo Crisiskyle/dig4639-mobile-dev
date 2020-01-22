@@ -1,6 +1,9 @@
 # Mobile Development
 This repository contains work completed during Spring 2020 in Dr. Murray's DIG4639: Mobile Development class.
 
+Change this girl
+
+
 ## Structure
 The *ice* folder contains in-class exercises. 
 
