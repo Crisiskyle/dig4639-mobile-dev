@@ -12,3 +12,6 @@ The *ice* folder contains in-class exercises.
 https://www.linkedin.com/in/kyle-melendez-8368a2123/
 
 My preffered job is something involving front end. Mostly HTML , CSS and Javascript.
+This should be replaced.
+
+This is the change.
