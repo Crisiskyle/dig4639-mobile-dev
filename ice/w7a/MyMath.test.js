@@ -1,9 +1,36 @@
-import { Sum } from './sum.js'
+import { Sum } from './MyMath.js'
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(Sum(1, 2)).toBe(3)
+
+describe('Testing Addlist',()=>{
+  it ('Returns the sum of a list of numbers',()=>
+{
+ let list =[1,2,3,4];
+ let result = AddList(list);
+ expect(result).toBe(10);
+
+
+
 })
+})
+describe('Testing Sum', ()=>{
+  it("Adds a string ",()=>{
+    var result =Sum("Test",5);
+    expect(result).toBeUndefined();
 
+  });
+  test('add 1+2 to equal 3', () =>{
+    expect(Sum(1,2)).toBe(3)
+
+  })
+
+
+
+
+
+  test('adds 1 + 2 to equal 3', () => {
+    expect(Sum(1, 2)).toBe(3)
+  })
+})
 // ICE 
 
 // Examples for Null
