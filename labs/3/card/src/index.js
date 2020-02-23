@@ -1,5 +1,5 @@
 
-import Card from "./Component/Card/index.js";
+import Card from "./Components/Card/index.js";
 
 
 
