@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @param a 
 @param b
 
@@ -23,3 +24,12 @@ if (result==op1+op2) {
   console.log("It woked!!!");
 }
   else{
+=======
+function Sum (a, b) {
+  return a + b
+}
+
+console.log(Sum(2,3));
+
+export { Sum };
+>>>>>>> fe277fcee38e1b953a813f52fa2d0a9fceacf0f6

@@ -4,9 +4,16 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+    {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch w8A ice",
+        "program": "${workspaceFolder}/ice/w8a/index.js",
+        "skipFiles": [
+            "<node_internals>/**"
+        ]
+    },
         {
-<<<<<<< HEAD
-=======
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome",
@@ -45,7 +52,6 @@
             ]
         },
         {
->>>>>>> 64d01955e21d788072f8747da3667ef80b5707d2
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
