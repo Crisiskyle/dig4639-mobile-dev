@@ -43,4 +43,4 @@ const newArray3=newArray.map(addTwo)
 console.log('map',newArray3)
 
 //create new array using map
-const newArray
+const newArray4 =newArray.map ((value) 
