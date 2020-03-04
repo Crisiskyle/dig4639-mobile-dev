@@ -1,12 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Card from "./Components/Card/index.js";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+
+function runOnLoad(){
+  
+        let element = document.createElement("div");    
+        element.id = "container";    
+        document.body.appendChild(element);    
+        
+        var newTask = new Card({content:"This is a card"});    
+        
+        element.appendChild(newTask.render());
+    
+    }
+        
+        
+window.addEventListener("DOMContentLoaded", runOnLoad);
