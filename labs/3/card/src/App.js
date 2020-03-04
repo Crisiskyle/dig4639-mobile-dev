@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
+import CardList from './Components/CardList/index.js';
 
-function App() {
-  return (
-   <Card />
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <CardList />
+    )
+  }
 }
 
 export default App;
