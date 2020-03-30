@@ -9,11 +9,14 @@ class App extends React.Component {
     weather: []    
   }
   fetchWeather() {
-    // shows where to get the information 
+   
+
     fetch(API)
-    // changes everything to JSON
+
+
     .then(response => response.json())
-    // updates the weather
+ 
+    
     .then(data => {
       let periods = data.properties.periods;
       console.log(data)
