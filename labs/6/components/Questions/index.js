@@ -11,7 +11,7 @@ class Question extends React.Component {
         this.state.correct = 0;
         console.log(this.state.questions.length);
     }
-    incrementQuestion() {
+    addQuestion() {
         console.log('AFTER THIS_____________________');
         console.log(this)
         this.setState({question: this.state.question + 1})
@@ -19,7 +19,7 @@ class Question extends React.Component {
     }
     correctChoice() {
         this.setState({correct: this.state.correct + 1})
-        this.incrementQuestion()
+        this.addQuestion()
     }
     render() {
         if (this.state.question === 0) {
@@ -31,10 +31,9 @@ class Question extends React.Component {
                         <Text style={this.state.styles.title}>Quiz!</Text>
                     </View>
                     <Button
-                        onPress={this.incrementQuestion.bind(this)}
+                        onPress={this.addQuestion.bind(this)}
                         title="Ready to take this Survey Quiz?"
                         color="#6a0dad"
-                        accessibilityLabel="Ready to take this Survey Quiz?"
                         />
 
                 </>
@@ -45,13 +44,13 @@ class Question extends React.Component {
             return(
                 <>
                     <View>
-                        <Text style={this.state.styles.title}>End of the Quiz!</Text>
+                        <Text style={this.state.styles.title}>Here are your results.</Text>
                     </View>
                     <View>
                         <Text style={this.state.styles.title}>{(this.state.correct / this.state.questions.length) * 100}%</Text>
                     </View>
                     <View>
-                        <Text>You scored {this.state.correct} out of {this.state.questions.length}</Text>
+                        <Text>You have gotten {this.state.correct} out of {this.state.questions.length} correct.</Text>
                     </View>
                 </>
             );
@@ -60,9 +59,21 @@ class Question extends React.Component {
 
             return(
                 <>
-                    <View>
+
+<View>
                         <Text style={this.state.styles.question}>{this.state.questions[this.state.question - 1].question}</Text>
                     </View>
+
+
+                  <View>
+                        <Button
+                            onPress={this.addQuestion.bind(this)}
+                            title={this.state.questions[this.state.question - 1].wrongChoice}
+                            accessibilityLabel="Choose"
+                            style={this.state.styles.answer}
+                            />
+                    </View>
+                   
                     <View>
                         <Button
                             onPress={this.correctChoice.bind(this)}
@@ -71,14 +82,7 @@ class Question extends React.Component {
                             style={this.state.styles.answer}
                             />
                     </View>
-                    <View>
-                        <Button
-                            onPress={this.incrementQuestion.bind(this)}
-                            title={this.state.questions[this.state.question - 1].wrongChoice}
-                            accessibilityLabel="Choose"
-                            style={this.state.styles.answer}
-                            />
-                    </View>
+                  
                 </>
             );
         }
