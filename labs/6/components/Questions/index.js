@@ -17,7 +17,7 @@ class Question extends React.Component {
         this.setState({question: this.state.question + 1})
         return true;
     }
-    answerCorrect() {
+    correctChoice() {
         this.setState({correct: this.state.correct + 1})
         this.incrementQuestion()
     }
@@ -65,17 +65,17 @@ class Question extends React.Component {
                     </View>
                     <View>
                         <Button
-                            onPress={this.answerCorrect.bind(this)}
-                            title={this.state.questions[this.state.question - 1].answerTrue}
-                            accessibilityLabel="Click to choose this answer"
+                            onPress={this.correctChoice.bind(this)}
+                            title={this.state.questions[this.state.question - 1].correctChoice}
+                            accessibilityLabel="Choose"
                             style={this.state.styles.answer}
                             />
                     </View>
                     <View>
                         <Button
                             onPress={this.incrementQuestion.bind(this)}
-                            title={this.state.questions[this.state.question - 1].answerFalse}
-                            accessibilityLabel="Click to choose this answer"
+                            title={this.state.questions[this.state.question - 1].wrongChoice}
+                            accessibilityLabel="Choose"
                             style={this.state.styles.answer}
                             />
                     </View>

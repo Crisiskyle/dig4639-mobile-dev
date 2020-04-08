@@ -13,7 +13,7 @@ class Application extends React.Component {
         container: {
           flex: 1,
           backgroundColor: '#add8e6',
-          alignItems: 'center',
+          alignItems: '',
           justifyContent: 'center',
         },
         title: {
@@ -24,7 +24,7 @@ class Application extends React.Component {
         question: {
           color: '#6a0dad',
           marginBottom: 25,
-          fontSize: 18
+          fontSize: 25
         },
         answer: {
           marginBottom: 50,
@@ -34,33 +34,36 @@ class Application extends React.Component {
       questions: [
         {
           question: 'Which gaming company does Megaman belong to ?',
-          answerTrue: 'Capcom',
-          answerFalse: 'Ubisoft'
+          wrongChoice: 'Ubisoft',
+          correctChoice: 'Capcom'
+          
         },
         {
           question: 'What color is Pikachu',
-          answerTrue: 'Yellow Duh',
-          answerFalse: 'I think Blue?'
+          correctChoice: 'Yellow Duh',
+          wrongChoice: 'I think Blue?'
         },
         {
           question: 'What does Mario wear?',
-          answerTrue: 'a Hat',
-          answerFalse: 'A dress'
+          correctChoice: 'a Hat',
+          wrongChoice: 'A dress'
         },
         {
           question: 'What is NES from',
-          answerTrue: 'Earthbound',
-          answerFalse: 'Steven Universe'
+          wrongChoice: 'Steven Universe',
+          correctChoice: 'Earthbound'
+          
         },
         {
           question: 'What is Garnet from?',
-          answerTrue: 'Steven Universe',
-          answerFalse: 'Ok KO!'
+          wrongChoice: 'Ok KO!',
+          correctChoice: 'Steven Universe'
+          
         },
         {
           question: 'What Year was Pokémon made?',
-          answerTrue: '1998',
-          answerFalse: '2001'
+          correctChoice: '1998',
+          wrongChoice: '2001'
         }
       ]
     }
