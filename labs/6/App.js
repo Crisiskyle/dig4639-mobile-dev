@@ -57,7 +57,7 @@ class Application extends React.Component {
         {
           question: 'What is Garnet from?',
           wrongChoice: 'Ok KO!',
-          correctChoice: 'Steven Universe'
+          correctChoice: 'Steven Universe',
           
         },
         {
