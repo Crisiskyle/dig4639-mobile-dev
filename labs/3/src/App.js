@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import CardList from './Components/CardList/index.js';
+import Card from './components/Card/index.js';
 
 class App extends React.Component {
   render() {
     return (
-      <CardList />
+      <Card content="This is a card!"></Card>
     )
   }
 }
