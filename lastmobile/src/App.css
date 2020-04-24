@@ -1,0 +1,38 @@
+  
+.App {
+  text-align: center;
+}
+
+.parent{
+  text-align:center;
+  margin: 0 auto;
+  background-image: url("phone.png");
+  background-position: center;
+  font-family: 'Bangers', cursive;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.body3{
+
+  font-family: 'Bangers', cursive;
+
+
+
+}
+.body2{
+  font-family: 'Bangers', cursive;
+
+}

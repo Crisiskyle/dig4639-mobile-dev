@@ -1,0 +1,37 @@
+  
+.but2 {
+	background-color:#000000;
+	border-radius:15px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:12px;
+	padding:10px 15px;
+	text-decoration:none;
+}
+.but2:hover {
+	background-color:#000000);
+}
+.but2:active {
+	position:relative;
+	top:1px;
+}
+
+
+.body2{
+	background-color: rgba(247, 26, 100);
+	max-width: 500px;
+	margin: auto;
+	border: 3px solid #000000;
+}
+.something{
+    color:black;
+
+}
+.words5{
+    width:200px;
+    background-color: rgba(2, 26, 14, 0.932);
+    color:white
+}
