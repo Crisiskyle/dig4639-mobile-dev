@@ -1,4 +1,3 @@
-
 import React from 'react';
 import data from './data.json'
 import Card from  '../Card/index.js'
@@ -9,9 +8,11 @@ class CardList extends React.Component {
         this.state = {
             cards: data.cards,
         }
+
+        
     }
-    removeCard = cardNumber => {
-        const cards = this.state.cards.filter(card => card.id !== cardNumber);
+    removeCard = cardID => {
+        const cards = this.state.cards.filter(card => card.id !== cardID);
         console.log(this.state.cards)
         this.setState({ cards: cards });
     };
